@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible gameplay or installation problem
+body:
+  - type: markdown
+    attributes:
+      value: "Remove private information from logs. For vulnerabilities, follow SECURITY.md."
+  - type: input
+    id: version
+    attributes:
+      label: Ultimate Skyblock and Minecraft versions
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and singleplayer / LAN / dedicated server
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behaviour and actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant skills, perks, extra mods and sanitized log excerpt

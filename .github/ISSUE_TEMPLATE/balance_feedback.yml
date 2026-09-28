@@ -1,0 +1,24 @@
+name: Balance and playtest feedback
+description: Tell us what felt rewarding, confusing, slow or too easy
+body:
+  - type: input
+    id: setup
+    attributes:
+      label: Version, crew size, play time and difficulty / pacts
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What happened, and how did it feel?
+      description: Include the milestone, skills, perks and farm or generator setup.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would make it better without removing the challenge?
+  - type: textarea
+    id: enjoyed
+    attributes:
+      label: What should we keep?

@@ -1,0 +1,41 @@
+# Ultimate Skyblock: settings that setup-server.ps1 writes into server.properties.
+# Each key below replaces the same key in the generated server.properties; every other key
+# is kept as it is. Running the setup again applies these values again.
+#
+# hardcore=true             One life. The mod's revive and run rules apply on top.
+# difficulty=hard           Hardcore always plays on hard.
+# level-type                The mod's skyblock world preset. A colon must be escaped (\:)
+#                           in .properties files.
+# level-seed=               Empty means a random seed. Only used when a world is created.
+# generate-structures=true  Needed for the floating fortresses, bastions, strongholds and
+#                           ghost structures.
+# white-list, enforce-whitelist
+#                           Only players added with "whitelist add <name>" can join, even
+#                           though the playit.gg address is public.
+# online-mode=true          Accounts are checked with Microsoft, so names can't be faked.
+# spawn-protection=0        Essential: the default 16 stops everyone except operators from
+#                           building on the spawn island.
+# max-players=4             2-3 friends and a spare slot.
+# view-distance=10, simulation-distance=8
+#                           Comfortable for a small co-op world on a home PC.
+# pause-when-empty-seconds=60
+#                           The world stops ticking a minute after the last player leaves.
+# server-ip=127.0.0.1       Listen on this PC only. Friends come in through the playit.gg
+#                           agent, which connects locally; you join at 127.0.0.1.
+# motd                      The text in the multiplayer server list.
+
+hardcore=true
+difficulty=hard
+level-type=ultimateskyblock\:skyblock
+level-seed=
+generate-structures=true
+white-list=true
+enforce-whitelist=true
+online-mode=true
+spawn-protection=0
+max-players=4
+view-distance=10
+simulation-distance=8
+pause-when-empty-seconds=60
+server-ip=127.0.0.1
+motd=Ultimate Skyblock
