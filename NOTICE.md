@@ -1,14 +1,14 @@
 # Rights and third-party notices
 
 Free Java downloads are provided under [the Free Play License](LICENSE).
-The source repository remains private. This is the first public distribution
-prepared by the author. A CC0 file inherited from the Fabric example template
-was present during private development; that is not presented here as evidence
-of an earlier public release of Ultimate Skyblock.
+The source repository remains private. Version 2.8.5 is the first public
+distribution, and no Ultimate Skyblock material has ever been released under
+CC0 or another public license.
 
-The Fabric example template's CC0 material retains its own terms; see
-[CC0 legal text](licenses/CC0-1.0.txt). Any independently valid prior grants,
-if applicable, are unaffected by the project's license.
+The CC0 text in [licenses/CC0-1.0.txt](licenses/CC0-1.0.txt) belongs to the
+Fabric example mod template the project was started from. It covers only that
+template's own unmodified build scaffolding, not Ultimate Skyblock's code,
+assets, text, data or design.
 
 Minecraft belongs to Mojang/Microsoft. This project is unofficial and is not
 approved by or associated with Mojang or Microsoft. Minecraft game JARs and

@@ -1,13 +1,15 @@
-Ultimate Skyblock Free Play License — version 1
+Ultimate Skyblock Free Play License, version 2
 Copyright 2026 TorMartin-ops, to the extent copyright subsists and is retained.
 
-Scope and earlier permissions
-This license applies only to original material for which the author retains
-the necessary rights. Material previously validly released under CC0 remains
-available under CC0; this license does not withdraw, restrict or replace those
-permissions. See licenses/CC0-1.0.txt. Third-party material remains subject to
-its own licenses. No exclusive rights are claimed in Minecraft or in material
-that is not protected by copyright.
+Scope
+This license covers all Ultimate Skyblock material: code, assets, text, data
+and design. No Ultimate Skyblock material has been released under CC0 or under
+any other public license. The project was started from the Fabric example mod
+template, which the Fabric project published under CC0; that grant covers only
+the template's own unmodified build scaffolding, not anything written for
+Ultimate Skyblock. See licenses/CC0-1.0.txt. Third-party material remains
+subject to its own licenses. No exclusive rights are claimed in Minecraft or in
+material that is not protected by copyright.
 
 Free play and community distribution
 You may download, install, play, configure and privately modify this release,
@@ -19,11 +21,11 @@ Modrinth and CurseForge may host and distribute the author's submitted releases.
 No ownership of players' worlds, recordings or feedback is claimed.
 
 Reserved rights
-Except for the permissions above, prior CC0 grants, applicable law and relevant
-third-party licenses, rights are reserved. Selling or sublicensing newly
-protected project material, distributing modified versions of that material,
-or incorporating it into a commercial port requires separate written permission.
-This does not restrict uses already permitted by an earlier CC0 release.
+Except for the permissions above, applicable law and relevant third-party
+licenses, all rights are reserved. Selling or sublicensing project
+material, distributing modified versions of it, or porting or adapting it to
+another game or platform, including Minecraft: Bedrock Edition and the
+Minecraft Marketplace, requires separate written permission from the author.
 The source repository is private; free downloads are not a promise of source access.
 
 Minecraft rules
