@@ -1,6 +1,6 @@
 # Included mods
 
-The **2.8.5 client installer installs ten JAR files**. All Skyblock gameplay is in Ultimate Skyblock; the companions improve performance and useful information.
+The 2.8.5 client installer installs ten JAR files. All the gameplay is in Ultimate Skyblock. The rest are for performance and for showing useful info.
 
 | Mod | Why it is included |
 |---|---|
@@ -15,13 +15,13 @@ The **2.8.5 client installer installs ten JAR files**. All Skyblock gameplay is 
 | [Jade](https://modrinth.com/mod/jade) | Information about the block or creature you are looking at |
 | [Shulker Box Tooltip](https://modrinth.com/mod/shulkerboxtooltip) | Preview stored items without placing the box |
 
-Only **Ultimate Skyblock and Fabric API** are required for gameplay. The other eight are the curated companions. Performance benefits depend on your hardware and base; no fixed FPS improvement is promised.
+You only need Ultimate Skyblock and Fabric API to play. The other eight are optional. How much they help depends on your PC and how big your base is.
 
-Minecraft **26.3**, Fabric Loader **0.19.5** and Java **25** are required. Loader is not another file in `mods`. Exact companion versions and download hashes are in [mods.lock.json](../modpack/mods.lock.json).
+You need Minecraft 26.3, Fabric Loader 0.19.5 and Java 25. The loader is not a file in `mods`. Exact companion versions and download hashes are in [mods.lock.json](../modpack/mods.lock.json).
 
 ## Why Minecraft shows more than ten mods
 
-The pinned Fabric API JAR contains **44 internal modules**. Other mods and the loader also include libraries. Fabric counts these separately. A high displayed count does not mean the installer added that many separate gameplay mods. Do not remove individual modules from a JAR.
+Fabric API alone is 44 small modules, and other mods and the loader bring their own libraries. Fabric counts every one of them. So a big number in the mod list does not mean the installer added that many mods. Do not try to remove modules from a JAR.
 
 ## Windows installation and updates
 
@@ -29,7 +29,7 @@ The pinned Fabric API JAR contains **44 internal modules**. Other mods and the l
 2. Extract it, close Minecraft and the launcher, and double-click **Install.bat**.
 3. Select the Ultimate Skyblock installation named in the installer's completion message.
 
-The installer uses a dedicated game directory, normally `%APPDATA%\.minecraft\profiles\ultimate-skyblock-26.3`. It installs the ten-file set without additional bundles. Standard generated launcher names are updated to show the installed version; custom names are preserved.
+The installer uses a dedicated game directory, normally `%APPDATA%\.minecraft\profiles\ultimate-skyblock-26.3`. It installs the ten files and nothing else. The launcher profile's name is updated to show the installed version, unless you renamed it yourself.
 
 To preview changes without writing anything:
 
@@ -43,14 +43,14 @@ Advanced options are `-GameDir <folder>`, `-ModJar <file>`, or `-ModJarUrl <http
 
 ## macOS and Linux
 
-Import the release's `.mrpack` in a launcher with Modrinth pack support to install the curated set. It uses the same pinned versions as the Windows installer and contains no personal settings or worlds. See [portable instructions](../modpack/PORTABLE.md).
+Import the release's `.mrpack` in a launcher that supports Modrinth packs. It has the same mod versions as the Windows installer, and no settings or worlds. See [portable instructions](../modpack/PORTABLE.md).
 
-For manual installation, install Fabric Loader for Minecraft 26.3. Put the release's Ultimate Skyblock JAR and the pinned Fabric API JAR in the profile's `mods` folder. Those two files are sufficient for gameplay. Add the eight companions from the table if wanted, using the versions and URLs in the lock. The supplied Windows installer does not run on macOS or Linux. Native macOS gameplay has not been fully verified.
+For manual installation, install Fabric Loader for Minecraft 26.3. Put the release's Ultimate Skyblock JAR and the pinned Fabric API JAR in the profile's `mods` folder. Those two files are enough to play. Add the other eight from the table if you want them, with the versions in the lock file. The Windows installer does not run on macOS or Linux. The mod has not been tested much on macOS.
 
 ## Playing with friends
 
-The host and every player need the **same Ultimate Skyblock version** and compatible Fabric API. The client performance and information mods are not mandatory server dependencies.
+The host and every player need the same Ultimate Skyblock version and a Fabric API that fits it. The server does not need the client performance and info mods.
 
-The dedicated server installer defaults to **four JARs**: Ultimate Skyblock, Fabric API, Lithium and FerriteCore. Optional server support for the included information mods is available with `-Include appleskin,jade,shulkerboxtooltip`. This provides additional server data for their clients; it adds no new progression system. See [HOSTING.md](HOSTING.md).
+The dedicated server installer defaults to **four JARs**: Ultimate Skyblock, Fabric API, Lithium and FerriteCore. Optional server support for the included information mods is available with `-Include appleskin,jade,shulkerboxtooltip`. That only gives those mods the server data they want. See [HOSTING.md](HOSTING.md).
 
-No hosting service, tunnel, account or paid subscription is installed by the client installer. Use the project's GitHub Releases page for official downloads; no paid modpack subscription is required.
+The client installer does not install any hosting service, tunnel or account. Everything is free, and the official downloads are on this project's GitHub Releases page.

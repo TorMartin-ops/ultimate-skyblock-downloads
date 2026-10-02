@@ -1,10 +1,15 @@
-# 2.8.5 — Public playtest distribution
+# 2.8.5
 
-- Separate public downloads and feedback hub; source stays private.
-- Free Play License for rights still retained, with third-party licenses and any valid prior grants preserved.
-- Windows client package and portable Modrinth pack, with the same ten mod files.
-- Clear installation instructions and bug/balance reporting routes.
+First public release. Nothing in the gameplay changed from 2.8.4, this one is
+about getting the mod out to other people.
 
-Gameplay is unchanged from 2.8.4. Native macOS input and long-session balance
-remain priorities for player feedback. This release does not claim to fix new
-gameplay bugs or to revoke existing license grants.
+- Downloads and bug reports now live in this public repository. The source is
+  still private.
+- The mod is free to play under the Free Play License. Third-party licenses
+  are unchanged.
+- A Windows client package and a portable `.mrpack`, both with the same ten
+  mod files.
+- Install instructions, and issue templates for bugs and balance feedback.
+
+It has not been tested much on macOS or in very long sessions, so feedback on
+those is welcome.

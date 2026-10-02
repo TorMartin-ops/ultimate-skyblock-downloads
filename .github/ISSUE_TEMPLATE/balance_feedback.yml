@@ -1,5 +1,5 @@
 name: Balance and playtest feedback
-description: Tell us what felt rewarding, confusing, slow or too easy
+description: What was fun, confusing, too slow or too easy
 body:
   - type: input
     id: setup
@@ -17,8 +17,8 @@ body:
   - type: textarea
     id: suggestion
     attributes:
-      label: What would make it better without removing the challenge?
+      label: What would make it better?
   - type: textarea
     id: enjoyed
     attributes:
-      label: What should we keep?
+      label: What did you like?

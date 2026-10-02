@@ -1,15 +1,21 @@
-# Help improve Ultimate Skyblock
+# Helping out
 
-Player feedback is the main way to help. The source repository is private;
-the public project hosts downloads, instructions and issue reports.
+The best way to help is to play it and tell me what happened. The source code
+is private, so this repository is only for downloads, docs and issues.
 
-Report bugs with the version, operating system, singleplayer/LAN/server setup,
-steps to reproduce, expected result and actual result. For balance feedback,
-include crew size, play time, skills/perks, generator or farm setup, the milestone
-involved and what felt rewarding or frustrating. Suggestions are welcome.
+For a bug, please include:
 
-Share only relevant, sanitized log excerpts. Remove tokens, email addresses,
-private server addresses and home-directory paths. Never upload launcher account
-files or whole game folders. Follow SECURITY.md for vulnerabilities.
+- the mod version and your operating system
+- singleplayer, LAN or server
+- what you did, what you expected and what happened instead
 
-Issues and feedback: https://github.com/TorMartin-ops/ultimate-skyblock-downloads/issues
+For balance feedback it helps to know how many you were, how long you had
+played, which skills and perks you had, what your generator or farms looked
+like, and which challenge you were on. Suggestions are welcome too.
+
+Only paste the part of the log that matters, and remove tokens, email
+addresses, server addresses and paths with your name in them first. Do not
+upload launcher account files or your whole game folder. Security problems go
+through [SECURITY.md](SECURITY.md).
+
+Issues: https://github.com/TorMartin-ops/ultimate-skyblock-downloads/issues

@@ -6,7 +6,7 @@ A dedicated server keeps the world available while the host closes their game. L
 
 ## 1. Set up the server (host, once)
 
-You need Windows, about 4 GB of free RAM for the server, and the mod jar the release JAR. The script uses the Java 25 that comes with the Minecraft Launcher. If it can't find Java 25, install it with `winget install EclipseAdoptium.Temurin.25.JRE`.
+You need Windows, about 4 GB of free RAM for the server, and the mod jar from the release. The script uses the Java 25 that comes with the Minecraft Launcher. If it can't find Java 25, install it with `winget install EclipseAdoptium.Temurin.25.JRE`.
 
 1. Download and extract the `-server.zip` from the release. From its extracted folder,
    run the setup script. Use a separate destination for the running server.

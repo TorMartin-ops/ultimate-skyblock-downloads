@@ -18,6 +18,3 @@ transfer ownership of Minecraft content.
 Companion mods, the Gradle wrapper and third-party libraries retain their own
 licenses. See [the mod list](docs/MODS.md). Installers use pinned official CDN
 downloads; the pack license does not replace the companions' licenses.
-
-Development has used AI assistance for code, documentation and design.
-Automated testing does not replace player feedback or full-session playtesting.
