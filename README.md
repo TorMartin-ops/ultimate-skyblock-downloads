@@ -1,13 +1,16 @@
-# Ultimate Skyblock
+# Voidhome
 
-Downloads, setup help and bug reports for Ultimate Skyblock, a hardcore co-op
-skyblock mod for Minecraft Java 26.3 (Fabric).
+Downloads, setup help and bug reports for Voidhome, a hardcore co-op skyblock
+mod for Minecraft Java 26.3 (Fabric).
+
+Voidhome used to be called Ultimate Skyblock. The files, the installer and the
+in-game name still say Ultimate Skyblock until the next release.
 
 I made it to play with two friends, so it is balanced for 2 or 3 players. Solo
 works, it is just slower.
 
-**[Download the latest release](https://github.com/TorMartin-ops/ultimate-skyblock-downloads/releases/latest)** |
-**[Report a bug or give feedback](https://github.com/TorMartin-ops/ultimate-skyblock-downloads/issues/new/choose)**
+**[Download the latest release](https://github.com/TorMartin-ops/voidhome-downloads/releases/latest)** |
+**[Report a bug or give feedback](https://github.com/TorMartin-ops/voidhome-downloads/issues/new/choose)**
 
 The newest mod jar is also on
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ultimate-skyblock).

@@ -14,4 +14,4 @@ The pack only has the release files. No accounts, worlds, server addresses or se
 The other mods are downloaded from Modrinth and checked against their hashes.
 Your Minecraft account is handled by your launcher.
 
-Project, bug reports and hosting instructions: https://github.com/TorMartin-ops/ultimate-skyblock-downloads
+Project, bug reports and hosting instructions: https://github.com/TorMartin-ops/voidhome-downloads

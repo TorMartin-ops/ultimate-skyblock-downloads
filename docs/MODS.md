@@ -25,7 +25,7 @@ Fabric API alone is 44 small modules, and other mods and the loader bring their 
 
 ## Windows installation and updates
 
-1. Download the latest `ultimate-skyblock-<version>-client.zip` from [GitHub Releases](https://github.com/TorMartin-ops/ultimate-skyblock-downloads/releases/latest).
+1. Download the latest `ultimate-skyblock-<version>-client.zip` from [GitHub Releases](https://github.com/TorMartin-ops/voidhome-downloads/releases/latest).
 2. Extract it, close Minecraft and the launcher, and double-click **Install.bat**.
 3. Select the Ultimate Skyblock installation named in the installer's completion message.
 

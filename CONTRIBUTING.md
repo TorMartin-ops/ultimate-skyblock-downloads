@@ -18,4 +18,4 @@ addresses, server addresses and paths with your name in them first. Do not
 upload launcher account files or your whole game folder. Security problems go
 through [SECURITY.md](SECURITY.md).
 
-Issues: https://github.com/TorMartin-ops/ultimate-skyblock-downloads/issues
+Issues: https://github.com/TorMartin-ops/voidhome-downloads/issues
