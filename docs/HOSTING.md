@@ -1,4 +1,4 @@
-# Hosting Ultimate Skyblock
+# Hosting Voidhome
 
 **Recommended:** run a dedicated Fabric server on the host's PC, and let friends in through a [playit.gg](https://playit.gg) tunnel.
 
@@ -12,7 +12,7 @@ You need Windows, about 4 GB of free RAM for the server, and the mod jar from th
    run the setup script. Use a separate destination for the running server.
 
    ```powershell
-   powershell -ExecutionPolicy Bypass -File server\setup-server.ps1 -Dir C:\mc\skyblock-server -ModJar ultimate-skyblock-2.8.5.jar
+   powershell -ExecutionPolicy Bypass -File server\setup-server.ps1 -Dir C:\mc\skyblock-server -ModJar voidhome-3.3.1.jar
    ```
 
    - `-Include appleskin,jade,shulkerboxtooltip` adds server data for the included client information mods. Choose any of those names, or `all`.
@@ -22,7 +22,7 @@ You need Windows, about 4 GB of free RAM for the server, and the mod jar from th
    - downloads the Fabric server launcher;
    - creates the default settings;
    - applies [`server.properties.template`](../server/server.properties.template): hardcore, the skyblock world type, the whitelist, `spawn-protection=0` and `server-ip=127.0.0.1`;
-   - installs only Ultimate Skyblock, Fabric API, Lithium and FerriteCore by default;
+   - installs only Voidhome, Fabric API, Lithium and FerriteCore by default;
    - copies `start.bat` and `start.ps1` into the folder.
 2. Read the [Minecraft EULA](https://aka.ms/MinecraftEULA). If you accept it, run the same command again with `-AcceptEula`.
 3. Start the server by double-clicking `C:\mc\skyblock-server\start.bat`. The first start generates the skyblock world.

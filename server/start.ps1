@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Runs the Ultimate Skyblock server: backup, start, and start again after /skyblock restart.
+    Runs the Voidhome server: backup, start, and start again after /skyblock restart.
 
 .DESCRIPTION
     Every start:

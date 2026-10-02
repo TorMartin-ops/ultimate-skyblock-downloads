@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Sets up a dedicated Fabric server for Ultimate Skyblock (Minecraft 26.3, Fabric loader 0.19.5).
+    Sets up a dedicated Fabric server for Voidhome (Minecraft 26.3, Fabric loader 0.19.5).
 
 .DESCRIPTION
     1. Finds Java 25: the Minecraft Launcher's bundled runtime, JAVA_HOME, or java on PATH.
@@ -11,7 +11,7 @@
     4. Applies server.properties.template over server.properties. Other keys are kept.
     5. Sets eula=true only when you pass -AcceptEula.
     6. Installs the server mods from ..\modpack\mods.lock.json (group "server") and the
-       Ultimate Skyblock jar. Jars you added to mods\ yourself are never touched.
+       Voidhome jar. Jars you added to mods\ yourself are never touched.
     7. Copies start.ps1 and start.bat into the folder.
     Safe to run again, for example after a mod update.
 
@@ -19,7 +19,7 @@
     The server folder. Pick one outside the repository, for example C:\mc\skyblock-server.
 
 .PARAMETER ModJar
-    Path to the Ultimate Skyblock jar: build\libs\ultimate-skyblock-<version>.jar.
+    Path to the Voidhome jar: build\libs\voidhome-<version>.jar.
 
 .PARAMETER Include
     Optional server tooltip support: appleskin, jade, shulkerboxtooltip, or all.
@@ -35,7 +35,7 @@
     Only print what would happen. Nothing is downloaded or written.
 
 .EXAMPLE
-    powershell -ExecutionPolicy Bypass -File server\setup-server.ps1 -Dir C:\mc\skyblock-server -ModJar build\libs\ultimate-skyblock-2.8.4.jar -AcceptEula
+    powershell -ExecutionPolicy Bypass -File server\setup-server.ps1 -Dir C:\mc\skyblock-server -ModJar build\libs\voidhome-3.3.1.jar -AcceptEula
 #>
 [CmdletBinding()]
 param(
@@ -215,7 +215,7 @@ function Get-JarModId([string]$JarPath) {
 }
 
 function Get-JarProblem([string]$JarPath) {
-    # Why this jar is not the Ultimate Skyblock mod, or $null when it is.
+    # Why this jar is not the Voidhome mod, or $null when it is.
     $name = Split-Path -Leaf $JarPath
     if (-not (Test-PlainJarName $name)) { return "$name is not a .jar file" }
     if ($name -like '*-sources.jar') { return "$name is the sources jar; use the jar without -sources" }
@@ -226,7 +226,7 @@ function Get-JarProblem([string]$JarPath) {
         $entry = $zip.GetEntry('fabric.mod.json')
         if ($null -eq $entry) { return "$name has no fabric.mod.json, so it is not a Fabric mod" }
         $id = Get-ModIdFromJson (Read-ZipText $entry)
-        if ($id -ne $OurModId) { return "$name is the Fabric mod '$id', not Ultimate Skyblock ('$OurModId')" }
+        if ($id -ne $OurModId) { return "$name is the Fabric mod '$id', not Voidhome ('$OurModId')" }
         foreach ($e in $zip.Entries) { if ($e.FullName -like '*.class') { return $null } }
         return "$name contains no compiled classes"
     } catch {
@@ -282,7 +282,7 @@ if ($DryRun) { Write-Host 'DRY RUN: nothing will be downloaded or written.' -For
 
 if (-not $Dir) { Stop-Setup 'Pass -Dir <server folder>, for example -Dir C:\mc\skyblock-server' }
 $Dir = Resolve-FullPath $Dir
-if (-not $ModJar) { Stop-Setup 'Pass -ModJar <path to ultimate-skyblock-<version>.jar>.' }
+if (-not $ModJar) { Stop-Setup 'Pass -ModJar <path to voidhome-<version>.jar>.' }
 if (-not (Test-Path -LiteralPath $ModJar -PathType Leaf)) { Stop-Setup "Mod jar not found: $ModJar" }
 $ModJar = (Resolve-Path -LiteralPath $ModJar).ProviderPath
 $ModJarName = Split-Path -Leaf $ModJar
@@ -480,16 +480,16 @@ foreach ($e in $Wanted) {
 $ourDest = Join-Path $ModsDir $ModJarName
 $ourSha1 = Get-Sha1 $ModJar
 if ((Test-Path -LiteralPath $ourDest -PathType Leaf) -and (Get-Sha1 $ourDest) -eq $ourSha1) {
-    Write-Info "ok         $ModJarName (Ultimate Skyblock)"
+    Write-Info "ok         $ModJarName (Voidhome)"
     $Counts.ok++
 } elseif ($DryRun) {
-    Write-Plan "copy       $ModJarName (Ultimate Skyblock) from $ModJar"
+    Write-Plan "copy       $ModJarName (Voidhome) from $ModJar"
 } else {
     $part = Get-PartPath $ourDest
     [IO.File]::Copy($ModJar, $part, $true)
     if ((Get-Sha1 $part) -ne $ourSha1) { Remove-Item -LiteralPath $part -Force; Stop-Setup "Copying $ModJarName failed (sha1 changed)." }
     Move-Into $part $ourDest
-    Write-Info "installed  $ModJarName (Ultimate Skyblock)"
+    Write-Info "installed  $ModJarName (Voidhome)"
     $Counts.installed++
 }
 $NewManaged[$ModJarName] = @{ sha1 = $ourSha1; slug = $OurModId }
@@ -516,7 +516,7 @@ foreach ($name in @($OldManaged.Keys)) {
 if (-not $DryRun) {
     $files = @(foreach ($k in $NewManaged.Keys) { [pscustomobject]@{ file = $k; sha1 = $NewManaged[$k].sha1; slug = $NewManaged[$k].slug } })
     $manifest = [pscustomobject]@{
-        managed_by = 'server/setup-server.ps1 (Ultimate Skyblock)'
+        managed_by = 'server/setup-server.ps1 (Voidhome)'
         note = 'Jars listed here are replaced or removed by the setup script. Jars not listed here are yours and are never touched.'
         updated = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd'T'HH:mm:ss'Z'", $Invariant)
         included = @($Included)

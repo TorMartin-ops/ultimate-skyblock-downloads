@@ -1,4 +1,4 @@
-# Ultimate Skyblock: settings that setup-server.ps1 writes into server.properties.
+# Voidhome: settings that setup-server.ps1 writes into server.properties.
 # Each key below replaces the same key in the generated server.properties; every other key
 # is kept as it is. Running the setup again applies these values again.
 #
@@ -38,4 +38,4 @@ view-distance=10
 simulation-distance=8
 pause-when-empty-seconds=60
 server-ip=127.0.0.1
-motd=Ultimate Skyblock
+motd=Voidhome

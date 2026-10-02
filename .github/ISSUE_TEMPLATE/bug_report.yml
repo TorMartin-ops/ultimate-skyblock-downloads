@@ -7,7 +7,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: Ultimate Skyblock and Minecraft versions
+      label: Voidhome and Minecraft versions
     validations:
       required: true
   - type: input

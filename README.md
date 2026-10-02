@@ -3,8 +3,8 @@
 Downloads, setup help and bug reports for Voidhome, a hardcore co-op skyblock
 mod for Minecraft Java 26.3 (Fabric).
 
-Voidhome used to be called Ultimate Skyblock. The files, the installer and the
-in-game name still say Ultimate Skyblock until the next release.
+It was called Ultimate Skyblock before version 3.3.1. Worlds and settings from
+older versions keep working.
 
 I made it to play with two friends, so it is balanced for 2 or 3 players. Solo
 works, it is just slower.
@@ -52,7 +52,7 @@ More help: [portable pack](modpack/PORTABLE.md), [hosting a server](docs/HOSTING
 
 ## The mods in the pack
 
-The pack has ten mod files: Ultimate Skyblock, Fabric API, Sodium, Lithium,
+The pack has ten mod files: Voidhome, Fabric API, Sodium, Lithium,
 FerriteCore, ImmediatelyFast, Entity Culling, AppleSkin, Jade and Shulker Box
 Tooltip. You only need the first two. The other eight are there for
 performance and for showing useful info.
@@ -83,8 +83,7 @@ happen again and the part of the log that matters.
 Do not upload launcher account files, tokens or your whole game folder.
 
 It has not been played much on macOS, so reports from Mac players are extra
-welcome. 2.8.5 only changed how the mod is packaged and licensed, the gameplay
-is the same as 2.8.4.
+welcome.
 
 ## License
 

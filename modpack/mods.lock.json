@@ -6,7 +6,7 @@
   "minecraft": "26.3",
   "loader": "fabric",
   "fabric_loader": "0.19.5",
-  "notes": "Curated for 2.8.4 without changing pinned versions or hashes. Client: core only, nine companions plus Ultimate Skyblock. Server: default performance set, optional tooltip support.",
+  "notes": "Curated for 2.8.4 without changing pinned versions or hashes. Client: core only, nine companions plus Voidhome. Server: default performance set, optional tooltip support.",
   "entries": [
     {
       "slug": "appleskin",
